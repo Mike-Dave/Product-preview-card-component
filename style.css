@@ -94,12 +94,9 @@ aside {
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.btn::before {
-  content: url(../images/icon-cart.svg);
-  margin-right: 10px;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
 @media (min-width: 580px) {
