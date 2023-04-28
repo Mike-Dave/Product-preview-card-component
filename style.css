@@ -1,0 +1,152 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--cream);
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  padding-bottom: 10px;
+  color: var(--very-dark-blue);
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.75rem;
+  color: var(--dark-cyan);
+}
+
+aside {
+  padding: 1.25em;
+}
+
+.container {
+  margin: 1.2rem auto;
+  width: 90%;
+  max-width: 500px;
+  background-color: var(--white);
+  border-radius: 15px 15px 15px 15px;
+}
+.image {
+  border-radius: 15px 15px 0 0;
+}
+
+.second-container {
+  padding: 16px 20px;
+}
+
+.perfume {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-size: 0.9rem;
+  color: var(--dark-grayish-blue);
+  padding-bottom: 10px;
+}
+
+.third-container {
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#strikethrough-text {
+  text-decoration: line-through;
+  font-size: 0.9em;
+  color: var(--dark-grayish-blue);
+}
+
+.perfume-description {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: var(--dark-grayish-blue);
+  font-size: 0.88rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 13px;
+  background-color: var(--dark-cyan);
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: url(../images/icon-cart.svg);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (min-width: 580px) {
+  body {
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+  }
+
+  h1 {
+    line-height: 1;
+    padding-bottom: 12px;
+  }
+
+  .image {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 12px;
+  }
+
+  .perfume {
+    letter-spacing: 3.5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 0.75rem;
+  }
+
+  .second-container {
+    padding: 5px 22px;
+  }
+
+  .third-container {
+    padding: 0 19px;
+  }
+
+  .perfume-description {
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    min-height: 100vh;
+  }
+}
