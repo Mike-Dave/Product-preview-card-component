@@ -19,7 +19,10 @@ img {
 
 body {
   background-color: var(--cream);
-  overflow: hidden;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -41,7 +44,6 @@ aside {
 }
 
 .container {
-  margin: 1.2rem auto;
   width: 90%;
   max-width: 500px;
   background-color: var(--white);
@@ -99,13 +101,7 @@ aside {
   gap: 8px;
 }
 
-@media (min-width: 580px) {
-  body {
-    display: flex;
-    min-height: 90vh;
-    align-items: center;
-  }
-
+@media (min-width: 700px) {
   h1 {
     line-height: 1;
     padding-bottom: 12px;
@@ -139,11 +135,5 @@ aside {
   .perfume-description {
     font-size: 0.8rem;
     padding-bottom: 10px;
-  }
-}
-
-@media (min-width: 1000px) {
-  body {
-    min-height: 100vh;
   }
 }
